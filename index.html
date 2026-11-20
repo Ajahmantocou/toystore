@@ -311,6 +311,32 @@
       }
       .qris-hint svg { width: 16px; height: 16px; }
 
+      /* ---------- Kontak & Channel ---------- */
+      .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; margin-top: 2.4rem; }
+      @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
+      .contact-panel {
+        background: var(--surface); border: 1px solid var(--line); border-radius: 22px;
+        padding: 1.6rem; box-shadow: var(--shadow);
+      }
+      .contact-panel h3 { margin: 0; font-size: 1.12rem; font-weight: 800; display: flex; align-items: center; gap: .6rem; }
+      .contact-panel h3 svg { width: 22px; height: 22px; color: var(--red-ink); }
+      .contact-panel > p { margin: .5rem 0 0; color: var(--ink-soft); font-size: .95rem; }
+      .contact-list { display: grid; gap: .9rem; margin-top: 1.3rem; }
+      .contact-item {
+        display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+        background: var(--surface-2); border: 1px solid var(--line); border-radius: 14px; padding: 1rem 1.1rem;
+      }
+      .contact-item .who { flex: 1 1 10rem; min-width: 0; }
+      .contact-item .who strong { display: block; font-size: 1rem; }
+      .contact-item .who span { color: var(--ink-soft); font-size: .92rem; font-variant-numeric: tabular-nums; }
+      .btn-wa {
+        display: inline-flex; align-items: center; gap: .5rem; text-decoration: none;
+        background: #1faa55; color: #fff; font-weight: 800; font-size: .9rem;
+        padding: .65rem 1.15rem; border-radius: 10px; min-height: 2.9rem; white-space: nowrap;
+      }
+      .btn-wa:hover { background: #178a44; }
+      .btn-wa svg { width: 17px; height: 17px; }
+
       /* ---------- Penutup ---------- */
       .closing { text-align: center; }
       .closing .display { font-size: clamp(2.4rem, 7vw, 4.6rem); font-weight: 700; }
@@ -366,6 +392,7 @@
           <a href="#galeri">Galeri</a>
           <a href="#keunggulan">Keunggulan</a>
           <a href="#cara-belanja">Cara Belanja</a>
+          <a href="#kontak">Kontak</a>
           <a class="cta" href="#pembayaran">Bayar QRIS</a>
         </nav>
       </div>
@@ -607,6 +634,59 @@
         </div>
       </section>
 
+      <!-- KONTAK & CHANNEL -->
+      <section id="kontak" style="padding-top:0">
+        <div class="wrap">
+          <div class="reveal">
+            <span class="kicker">Kontak &amp; Channel Resmi</span>
+            <h2 class="display">Hubungi TOYSTORE</h2>
+            <p class="lead">Pesan akun lewat kontak order di bawah, dan ikuti channel WhatsApp resmi TOYSTORE untuk info stok dan update terbaru. Pastikan hanya menghubungi kontak resmi ini.</p>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-panel reveal">
+              <h3><i data-lucide="megaphone"></i> Channel WhatsApp Resmi</h3>
+              <p>Info stok akun, promo, dan pengumuman terbaru langsung dari TOYSTORE.</p>
+              <div class="contact-list">
+                <div class="contact-item">
+                  <div class="who">
+                    <strong>Main Official Channel</strong>
+                    <span>Channel utama TOYSTORE</span>
+                  </div>
+                  <a class="btn-wa" href="https://whatsapp.com/channel/0029Vb4lUP34tRrlUCurYQ2o" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> Ikuti Channel</a>
+                </div>
+                <div class="contact-item">
+                  <div class="who">
+                    <strong>Second Official Channel</strong>
+                    <span>Channel kedua TOYSTORE</span>
+                  </div>
+                  <a class="btn-wa" href="https://whatsapp.com/channel/0029Vb81xRVFCCoQiRy92S2i" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> Ikuti Channel</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-panel reveal">
+              <h3><i data-lucide="shopping-bag"></i> Kontak Order</h3>
+              <p>Chat salah satu kontak berikut untuk memesan akun atau bertanya soal stok dan harga.</p>
+              <div class="contact-list">
+                <div class="contact-item">
+                  <div class="who">
+                    <strong>Owner</strong>
+                    <span>+62 878-5653-8074</span>
+                  </div>
+                  <a class="btn-wa" href="https://wa.me/6287856538074" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> Chat WhatsApp</a>
+                </div>
+                <div class="contact-item">
+                  <div class="who">
+                    <strong>Second</strong>
+                    <span>+62 877-1002-3818</span>
+                  </div>
+                  <a class="btn-wa" href="https://wa.me/6287710023818" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> Chat WhatsApp</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- PEMBAYARAN -->
       <section class="pay-section" id="pembayaran">
         <div class="wrap pay-grid">
@@ -656,6 +736,7 @@
           <a href="#kategori">Kategori</a>
           <a href="#galeri">Galeri</a>
           <a href="#keunggulan">Keunggulan</a>
+          <a href="#kontak">Kontak</a>
           <a href="#pembayaran">Pembayaran QRIS</a>
         </nav>
         <span>Game Store Indonesia — Mobile Legends &amp; Free Fire</span>
